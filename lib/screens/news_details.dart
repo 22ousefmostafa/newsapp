@@ -31,16 +31,20 @@ class NewsDetailsScreen extends StatelessWidget {
                         return Container(
                           height: 230,
                           color: Colors.grey[800],
-                          child: const Icon(Icons.broken_image,
-                              color: Colors.white),
+                          child: const Icon(
+                            Icons.broken_image,
+                            color: Colors.white,
+                          ),
                         );
                       },
                     )
                   : Container(
                       height: 230,
                       color: Colors.grey[800],
-                      child: const Icon(Icons.image_not_supported,
-                          color: Colors.white),
+                      child: const Icon(
+                        Icons.image_not_supported,
+                        color: Colors.white,
+                      ),
                     ),
             ),
             const SizedBox(height: 16),
@@ -54,7 +58,9 @@ class NewsDetailsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              article['source']['name'] ?? 'Europe',
+              article['source'] != null
+                  ? article['source']['name'] ?? 'Europe'
+                  : 'Europe',
               style: TextStyle(
                 color: Colors.grey[400],
                 fontSize: 14,
