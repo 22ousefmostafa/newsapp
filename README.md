@@ -17,6 +17,12 @@ A news app built with Flutter that fetches and displays the latest headlines fro
 | **REST Integration** | Parses JSON responses and renders them in the UI |
 | **Simple UI** | Clean Material design focused on readability |
 
+<p align="center">
+  <img src="screenshots/news_scroll.jpeg" width="240" alt="News_Scroll" />
+  &nbsp;&nbsp;
+  <img src="screenshots/news_details.jpeg" width="240" alt="News Details" />
+</p>
+
 ## 🛠️ Tech Stack
 
 | Category | Technology |
